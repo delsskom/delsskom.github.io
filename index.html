@@ -1,29 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WEBSITE CV DELLA</title>
-    <link rel="stylesheet" href="style.css">
+    <title>CV Saya</title>
     <style>
-       body {
-        background-image: url(bg.jpg);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 100vh;
-        margin: 0;
-        padding: 0;
-       }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(bg.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+        .container {
+            width: 80vw;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+            border-left: 10px solid #1976d2;
+            border-radius: 10px;
+            margin: auto;
+            margin-top: 5vh;
+        }
+        .photo {
+            flex: 1;
+            text-align: center;
+        }
+        .photo img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #1976d2;
+        }
+        .content {
+            flex: 3;
+            margin-left: 40px;
+        }
+        h1 {
+            color: #1976d2;
+            margin-bottom: 5px;
+        }
+        p {
+            margin: 5px 0;
+            color: #333;
+        }
+        h2 {
+            margin-top: 20px;
+            border-bottom: 2px solid #1976d2;
+            padding-bottom: 5px;
+            color: #1976d2;
+        }
     </style>
 </head>
-<body> 
-    
-    <p style="font-size: 40px; color: rgb(18, 47, 239);">HALO SELAMAT DATANG DI WEBSITE SAYA</p>
-           
-    <div class="container"> 
-        <a href="halamanlain.html" class="link-text">PINDAH KE HALAMAN SELANJUTNYA</a>
-    
+<body>
+    <div class="container">
+        <div class="photo">
+            <img src="della.jpg" alt="Foto Saya">
+        </div>
+        <div class="content">
+            <h1>DELLA MUSTIFAR</h1>
+            <p>MAHASISWA S1 ILMU KOMPUTER</p>
+            
+            <h2>Profil</h2>
+            <p>Saya menyukai atau hobi menggambar dan melukis.Selain itu saya menyukai permainan badminton dan volly.</p>
+            
+            <h2>Pendidikan</h2>
+            <p>1. Alumni SMAN 1 RAHA,MUNA</p>
+            <p>2. Berkuliah di Universitas Haluoleo menekuni    Program Studi Ilmu Komputer</p>
+            
+            <h2>Pengalaman Organisasi</h2>
+            <p>HMPS ILMU KOMPUTER, Divisi Danus</p>
+            
+            <h2>Kontak</h2>
+            <p>Email: emailanda@example.com</p>
+            <p>Telepon: 08123456789</p>
+        </div>
     </div>
 </body>
 </html>
