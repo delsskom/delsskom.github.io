@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Saya</title>
+    <title>CV DELLA MUSTIFAR</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,7 +13,10 @@
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            height: 100vh;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
         .container {
             width: 80vw;
@@ -27,10 +30,12 @@
             border-radius: 10px;
             margin: auto;
             margin-top: 5vh;
+            position: relative;
         }
         .photo {
             flex: 1;
             text-align: center;
+            position: relative;
         }
         .photo img {
             width: 200px;
@@ -38,6 +43,17 @@
             border-radius: 50%;
             object-fit: cover;
             border: 5px solid #1976d2;
+        }
+        .social-icons {
+            margin-top: 15px;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            display: inline-block;
+        }
+        .social-icons img {
+            width: 40px;
+            height: 40px;
         }
         .content {
             flex: 3;
@@ -57,31 +73,54 @@
             padding-bottom: 5px;
             color: #1976d2;
         }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-top: 2px solid #1976d2;
+            width: 100%;
+            position: relative;
+            bottom: 0;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="photo">
             <img src="della.jpg" alt="Foto Saya">
+            <div class="social-icons">
+                <a href="https://www.youtube.com/@Dellamustifar-r3e" target="_blank">
+                    <img src="youtube.png" alt="YouTube">
+                </a>
+                <a href="https://github.com/delsskom" target="_blank">
+                    <img src="github.png" alt="GitHub">
+                </a>
+            </div>
         </div>
         <div class="content">
             <h1>DELLA MUSTIFAR</h1>
             <p>MAHASISWA S1 ILMU KOMPUTER</p>
             
             <h2>Profil</h2>
-            <p>Saya menyukai atau hobi menggambar dan melukis.Selain itu saya menyukai permainan badminton dan volly.</p>
+            <p>Saya tertarik di bidang desain infografis</p>
             
             <h2>Pendidikan</h2>
-            <p>1. Alumni SMAN 1 RAHA,MUNA</p>
-            <p>2. Berkuliah di Universitas Haluoleo menekuni    Program Studi Ilmu Komputer</p>
+            <p>1. Alumni SMAN 1 RAHA, MUNA</p>
+            <p>2. Berkuliah di Universitas Halu Oleo menekuni Program Studi Ilmu Komputer</p>
             
             <h2>Pengalaman Organisasi</h2>
             <p>HMPS ILMU KOMPUTER, Divisi Danus</p>
             
+            <h2>Keterampilan</h2>
+            <p>- Menguasai Microsoft Word, Excel dan PowerPoint</p>
+            <p>- Desain grafis (CapCut, Canva)</p>
+            <p>- Manajemen waktu dan kerja tim</p>
+            
             <h2>Kontak</h2>
-            <p>Email: emailanda@example.com</p>
-            <p>Telepon: 08123456789</p>
+            <p>Email: dellamustifar.com</p>
+            <p>Telepon: 085333276559</p>
         </div>
     </div>
+
 </body>
 </html>
