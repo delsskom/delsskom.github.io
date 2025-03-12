@@ -1,22 +1,48 @@
-p {
-    text-align: center;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
-
 
 .container {
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    padding: 50px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 50vh;
+    justify-content: center;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.photo {
+    flex: 1;
     text-align: center;
 }
 
+.photo img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
 
-.link-text {
-    font-size: 24px;
-    color: black;
-    font-weight: bold;
-    text-decoration: underline ;
-    cursor: pointer;
+.content {
+    flex: 3;
+    margin-left: 40px;
+}
 
+h1 {
+    margin-bottom: 5px;
+}
+
+p {
+    margin: 5px 0;
+}
+
+h2 {
+    margin-top: 20px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
 }
