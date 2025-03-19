@@ -1,23 +1,14 @@
-const slider = document.querySelector(".slider-container");
+const slides = document.querySelector(".slides");
 const nextBtn = document.getElementById("next");
 const prevBtn = document.getElementById("prev");
-
 let currentIndex = 0;
 
 nextBtn.addEventListener("click", () => {
-    if (currentIndex < 1) {
-        currentIndex++;
-        updateSlide();
-    }
+    currentIndex = (currentIndex + 1) % 2; 
+    slides.style.transform = `translateX(-${currentIndex * 100}%)`;
 });
 
 prevBtn.addEventListener("click", () => {
-    if (currentIndex > 0) {
-        currentIndex--;
-        updateSlide();
-    }
+    currentIndex = (currentIndex - 1 + 2) % 2; 
+    slides.style.transform = `translateX(-${currentIndex * 100}%)`;
 });
-
-function updateSlide() {
-    slider.style.transform = `translateX(-${currentIndex * 100}vw)`;
-}
